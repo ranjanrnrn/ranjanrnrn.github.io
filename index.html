@@ -1,23 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Home</title>
-</head>
-<body>
-    <div id="main">
-        <div id="nav-menu">
-            <div>Ranjan Sahu</div>
-            <a style="text-decoration:none;" href="index.html"><div class="nav-link-home">Ranjan HOME</div></a>
-            <a style="text-decoration:none;" href="about.html"><div class="nav-link-about">ABOUT</div></a>
-            <a style="text-decoration:none;" href="skill.html"><div class="nav-link-skills">SKILLS</div></a>
-            <a style="text-decoration:none;" href="project.html"><div class="nav-link-projects">PROJECTS</div></a>
-            <a style="text-decoration:none;" href="contact.html"><div class="nav-link-contact">CONTACTS</div></a>
-            <a style="text-decoration:none;" href="https://drive.google.com/file/d/1RmOJPxug2dZY380e_W7hKDMGsUNQB1hm/view?usp=sharing"><div class="nav-link resume">RESUME</div></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranjan Sahu</title>
+    <script
+      src="https://kit.fontawesome.com/e5a9c90922.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./favicon/android-chrome-512x512.png"
+    />
+  </head>
+  <body>
+    <!------------------------ navbar starts------------------------------>
+    <div id="nav-menu">
+      <nav>
+        <h1>Ranjan</h1>
+        <ul id="nav-ul">
+          <li class="nav-link home"><a class="active" href="#home">Home</a></li>
+          <li class="nav-link about"><a href="#about">About</a></li>
+          <li class="nav-link skills"><a href="#skills">Skills</a></li>
+          <li class="nav-link projects"><a href="#projects">Projects</a></li>
+          <li class="nav-link contact"><a href="#contact">Contact</a></li>
+          
+          <li id="resume-button-1" class="nav-link resume">
+            <a
+              href="Ranjan_Sahu_Resume.pdf"
+              target="_blank"
+              id="resume-link-1"
+              download="Ranjan_Sahu_Resume.pdf"
+              >Resume <i class="fas fa-arrow-circle-down"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-    </div> 
-</body>
+      </nav>
+      <div class="cursor">
+        <button class="toggle">
+          <!-- <i class="fa-solid fa-moon dark"></i> -->
+          <i class="fa-solid fa-sun light"></i>
+        </button>
+      </div>
+    </div>
+
+    <!------------------------ navbar ends------------------------------>
+
+    <!------------------------ particles start------------------------------>
+
+    <div id="particles-js"></div>
+    <div class="count-particles"></div>
+    <script src="./script/particle.min.js"></script>
+
+    <!------------------------ particles ends------------------------------>
+
+    <!------------------------ home starts------------------------------>
+    <div id="home">
+      <div class="content">
+        <h2 id="user-detail-name">
+          Hi There,<br />
+          I'm Ranjan <span>Sahu</span>
+        </h2>
+        <p id="content-p">
+          I am a <span class="typing-text">Full Stack Web Developer</span>
+        </p>
+        
+        <button id="resume-button-2">
+          <a
+            href="Ranjan_Sahu_Resume.pdf"
+            target="_blank"
+            id="resume-link-2"
+            class="btn"
+            download="Ranjan_Sahu_Resume.pdf"
+            ><span>Resume</span> <i class="fas fa-arrow-circle-down"></i
+          ></a>
+        </button>
+        <div class="socials">
+          <ul class="social-icons">
+            <li>
+              <a
+                class="linkedin"
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/ranjan-sahu-bb4511214"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="github"
+                aria-label="GitHub"
+                href="https://github.com/ranjanrnrn"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="telegram"
+                aria-label="Telegram"
+                href="https://telegram.me/RNranjan"
+                target="_blank"
+                ><i class="fab fa-telegram-plane"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="instagram"
+                aria-label="Instagram"
+                href="https://www.instagram.com/rn.ranjan"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="home-image"
+        data-tilt
+        data-tilt-glare
+        data-tilt-max-glare="0.5"
+      >
+        <img
+          class="home-img"
+          src="image\pp1.jpg"
+          alt="profile_picture"
+        />
+      </div>
+    </div>
+
+    <!------------------------ home ends------------------------------>
+
+    <!------------------------ about starts------------------------------>
+
+    <div id="about" class="about section">
+      <div class="abtme">
+        <i class="fa-solid fa-user"></i>About <span>Me</span>
+      </div>
+      <div id="about-main">
+
+        <div class="abt-txt">
+          <h2>I'm <span>Ranjan</span></h2>
+          <h4>Full stack Web Developer</h4>
+          <p id="user-detail-intro">
+            I am a Full-Stack developer based in Balangir, Odisha, India.
+            Despite my postgraduate degree in Computer Science from
+            GACR, Rourkela, I have a strong passion for coding and building
+            applications and websites. My area of expertise lies in utilizing
+            NodeJS and MongoDB to create WebApps and Websites. I enjoy
+            challenging myself to develop Full-Stack clones of popular websites.
+            I constantly strive to enhance my programming skills by learning new
+            technologies and techniques, staying current with industry trends
+            and best practices. In my free time, I like contributing to open
+            source projects and exploring new programming languages. I am
+            committed to delivering high-quality work that satisfies or
+            surpasses client expectations, and I prioritize clean and
+            well-documented code.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!------------------------ about ends------------------------------>
+
+    <!------------------------ skills start------------------------------>
+
+    <div id="skills">
+      <div class="skills-head">
+        <i class="fa-solid fa-laptop-code"></i>Skills & <span>Abilities</span>
+      </div>
+      <div class="skills-main">
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">NodeJS</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png"
+            alt=""
+          />
+          <h3 class="skills-card-name">ExpressJS</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">MongoDB</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">HTML5</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">CSS3</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">JavaScript</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img class="skills-card-img" src="./svg/MySQL-Dark.svg" alt="" />
+          <h3 class="skills-card-name">MySQL</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img class="skills-card-img" src="./svg/TypeScript.svg" alt="" />
+          <h3 class="skills-card-name">TypeScript</h3>
+        </div>
+        <!-- <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card redis"
+        >
+          <img class="skills-card-img" src="./svg/AWS.svg" alt="" />
+          <h3 class="skills-card-name">AWS</h3>
+        </div> -->
+        <!-- <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">Git VCS</h3>
+        </div> -->
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png"
+            alt=""
+          />
+          <h3 class="skills-card-name">GitHub</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">Bootstrap</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.iconscout.com/icon/free/png-512/netlify-3521601-2945045.png?f=avif&w=256"
+            alt=""
+          />
+          <h3 class="skills-card-name">Netlify</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">VSCode</h3>
+        </div>
+      </div>
+    </div>
+    <!------------------------ skills ends------------------------------>
+
+    <!------------------------ project starts------------------------------>
+
+    <div id="projects">
+      <div class="skills-head">
+        <i class="fa-solid fa-paperclip"></i>Featured <span>Projects</span>
+      </div>
+      <div id="project-main">
+        <div
+          class="project-card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+        >
+          <div class="proj-sec">
+            <img
+              style="height: 200px; margin: auto"
+              src="./svg/KINGS&KNIGHTS.png"
+              alt=""
+            />
+          </div>
+          <div class="project-txt">
+            <h3 class="project-title">Real Time <span>chess app</span></h3>
+            <p class="project-description">
+              The real-time chess application is a web-based platform that allows players to compete against each other online & offline.
+            </p>
+            <h5 class="project-tech-stack">
+              Tech Stack - <i class="fa-brands fa-html5"></i
+              ><i class="fa-brands fa-css3-alt"></i
+              ><i class="fa-brands fa-square-js"></i
+              ><i class="fa-brands fa-node-js"></i
+              ><i class="fa-brands fa-envira"></i><span>ex</span>
+            </h5>
+            <div>
+              <button
+                class="project-deployed-link"
+                onclick="netlify(`https://chess-2par.onrender.com/`)"
+              >
+                <i class="fa-solid fa-link"></i>
+              </button>
+              <button
+                class="project-github-link"
+                onclick="git(`https://github.com/amar0705/celestial-star-9719`)"
+              >
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project-card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+        >
+          <div class="proj-sec">
+            <img
+              style="height: 200px; margin: auto"
+              src="./svg/Chatify.png"
+              alt=""
+            />
+          </div>
+          <div class="project-txt">
+            <h3 class="project-title">Whatsapp <span>Clone</span></h3>
+            <p class="project-description">
+              A real-time chatting application where multiple users can communicate between them and 
+              also create groups for multiple user communication.
+            </p>
+            <h5 class="project-tech-stack">
+              Tech Stack - <i class="fa-brands fa-html5"></i
+              ><i class="fa-brands fa-css3-alt"></i
+              ><i class="fa-brands fa-square-js"></i
+              ><i class="fa-brands fa-node-js"></i
+              ><i class="fa-brands fa-envira"></i><span>ex</span>
+            </h5>
+            <div>
+              <button
+                class="project-deployed-link"
+                onclick="netlify(`https://chatify-com.netlify.app/`)"
+              >
+                <i class="fa-solid fa-link"></i>
+              </button>
+              <button
+                class="project-github-link"
+                onclick="git(`https://github.com/rajesh1028/whatsapp-clone`)"
+              >
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project-card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+        >
+          <div class="proj-sec">
+            <img
+              style="height: 200px; margin: auto"
+              src="./svg/fashion_hub.png"
+              alt=""
+            />
+          </div>
+          <div class="project-txt">
+            <h3 class="project-title">Fashion <span>Hub</span></h3>
+            <p class="project-description">
+              E-Commerce fashion website where you can purchase different types 
+              of fashion product fro man, women and boys in different categories. 
+              
+            </p>
+            <h5 class="project-tech-stack">
+              Tech Stack - <i class="fa-brands fa-html5"></i
+              ><i class="fa-brands fa-css3-alt"></i
+              ><i class="fa-brands fa-square-js"></i>
+            </h5>
+            <div>
+              <button
+                class="project-deployed-link"
+                onclick="netlify(`https://fastidious-dieffenbachia-fc33de.netlify.app/`)"
+              >
+                <i class="fa-solid fa-link"></i>
+              </button>
+              <button
+                class="project-github-link"
+                onclick="git(`https://github.com/jadaun-sahab/humble-town-2578`)"
+              >
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project-card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+        >
+          <div class="proj-sec">
+            <img
+              style="height: 200px; margin: auto"
+              src="./svg/B&S.png"
+              alt=""
+            />
+          </div>
+          <div class="project-txt">
+            <h3 class="project-title">OLX <span>Clone</span></h3>
+            <p class="project-description">
+              Website where seller can post their product to sold and  who wants
+              to buy the product can contact to the seller through this platform.
+              
+            </p>
+            <h5 class="project-tech-stack">
+              Tech Stack - <i class="fa-brands fa-html5"></i
+              ><i class="fa-brands fa-css3-alt"></i
+              ><i class="fa-brands fa-square-js"></i>
+            </h5>
+            <div>
+              <button
+                class="project-deployed-link"
+                onclick="netlify(`https://silly-fairy-c02a7d.netlify.app`)"
+              >
+                <i class="fa-solid fa-link"></i>
+              </button>
+              <button
+                class="project-github-link"
+                onclick="git(`https://github.com/ranjanrnrn/evil-transport-7258/tree/main/project`)"
+              >
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!------------------------ project ends------------------------------>
+
+    <!------------------------ GitHub starts ------------------------------>
+
+    <div id="github-stats">
+      <div class="skills-head">
+        <i class="fa-brands fa-github-alt"></i>GitHub <span>Statistics</span>
+      </div>
+      <div class="container">
+        <h1 class="sub-title">GitHub Calender</h1>
+        <div>
+          <div class="react-activity-calendar calendar">
+            Loading the data just for you.
+          </div>
+          <br />
+          <div class="stats">
+            <a href="https://github.com/ranjanrnrn">
+              <img
+                id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=ranjanrnrn&theme=radical"
+                alt=""
+              />
+              <br />
+              <br />
+
+              <img
+                id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=ranjanrnrn&show_icons=true&line_height=27&count_private=true&title_color=f48c06&text_color=c9cacc&icon_color=2bbc8a&bg_color=141321"
+              />
+
+              <br />
+              <br />
+
+              <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=ranjanrnrn&theme=radical"
+                id="github-top-langs"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ GitHub ends ------------------------------>
+
+    <!------------------------ contact starts------------------------------>
+
+    <footer id="contact">
+      <h1>Contact</h1>
+      <div class="contact_me">
+        <p id="contact-phone">Contact Number - 7008057489</p>
+        <p>
+          <a id="contact-email" href="mailto:sahu.ranjanrn@gmail.com"
+            >Email Address - <span>sahu.ranjanrn@gmail.com</span>
+          </a>
+        </p>
+        <p>Address - Balangir, Odisha</p>
+
+        <div>
+          <a
+            class="project-link linkdk"
+            id="contact-linkedin"
+            target="_blank"
+            href="https://www.linkedin.com/in/ranjan-sahu-bb4511214"
+            ><i
+              style="font-size: 40px"
+              class="icon fa fa-linkedin"
+              aria-hidden="true"
+            ></i
+          ></a>
+
+          <a
+            class="project-link linkd"
+            id="contact-github"
+            target="_blank"
+            href="https://github.com/ranjanrnrn"
+            ><i
+              style="font-size: 40px"
+              class="fa fa-github"
+              aria-hidden="true"
+            ></i
+          ></a>
+
+          <a
+            class="project-link linkd"
+            href="mailto:sahu.ranjanrn@gmail.com"
+            target="_blank"
+            ><i
+              style="font-size: 40px"
+              class="icon fa fa-envelope"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!------------------------ contact ends------------------------------>
+  </body>
 </html>
+<script src="./script/index.js"></script>
+<script src="./script/jquery.js"></script>
+<script src="./script/tilt.jquery.js"></script>
+<script src="./script/particle.js"></script>
